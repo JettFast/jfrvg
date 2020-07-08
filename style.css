@@ -1,7 +1,7 @@
 /* Hamburger Styles */
 .hamburger {
     position: absolute;
-    top: 25px;
+    top: 45px;
     right: 25px;
   
     padding: 15px 15px;
@@ -163,6 +163,19 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: var(--kyblue);
+}
+
+.first-header {
+    display: flex; 
+    justify-content: flex-end; 
+    border-bottom: 1px rgb(233,233,233) solid; 
+    font-size: .8rem; 
+    padding: .7rem 4rem; 
+}
+
+.first-header a {
+    text-decoration: none; 
+    font-weight: 800; 
 }
 
 header {
@@ -381,8 +394,15 @@ select {
 
 /* FAQS PAGE */
 .faqs {
-    margin: 2rem 1rem 1rem; 
+    margin: 0 auto; 
+    width: 80%; 
 
+}
+
+.faqHeader {
+   
+    padding-bottom: 1rem; 
+    margin: 2rem; 
 }
 
 .question {
@@ -391,7 +411,7 @@ select {
 
 .answer {
     border-bottom: 1px var(--kyblue) solid; 
-    padding-bottom: .5rem; 
+    padding-bottom: 1rem; 
 }
 
 
@@ -409,7 +429,7 @@ select {
     } */
 
     form {
-        width: 50%; 
+        width: 60%; 
         
     }
 
@@ -439,6 +459,10 @@ select {
     .games-by-console {
         display: flex; 
         justify-content: space-around; 
+    }
+
+    .faqs {
+        width: 60%; 
     }
 
    .mario {
