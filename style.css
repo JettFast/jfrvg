@@ -95,6 +95,10 @@ nav li a {
     color: var(--kyblue); 
 }
 
+nav li a:hover {
+    color: var(--red);
+}
+
 .nav-pages {
     display: none; 
     padding: .8rem; 
