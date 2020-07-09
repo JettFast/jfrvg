@@ -259,15 +259,11 @@ header {
     margin: .8rem; 
 }
 
-footer {
-    margin-top: auto; 
-}
-
 .footer-top {
     background-color:var(--red); 
     color: white; 
     margin-bottom: 0;
-    margin-top: 3rem; 
+    margin-top: 2.5rem; 
     display: flex; 
     flex-wrap: wrap; 
     align-items: center;
@@ -383,6 +379,20 @@ footer {
       border-radius: 10px; 
   }
 
+  .policies {
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-around;
+      background-color: #fff; 
+  }
+
+  .jf-policies {
+    margin: 1rem; 
+}
+
+.pricing-page hr {
+    margin: 1.5rem 0 0; 
+}
 
 /* BOOK A PARTY PAGE */
 .booking-form {
@@ -518,9 +528,9 @@ select {
         width: 60%;  
     }
 
-   .mario {
-       width: 40%; 
-   }
+    .jf-policies {
+        width: 46%; 
+    }
 }
 
 @media (min-width: 992px) {
@@ -554,7 +564,14 @@ select {
     .footer-top h2 {
         padding: 1rem 5rem 1rem 3rem;  
     }
+
    
+}
+
+@media (min-width: 1067px) {
+    .jf-policies {
+        width: 22%; 
+    }
 }
 
 @media (min-width: 1107px) {
@@ -562,3 +579,4 @@ select {
         justify-content: space-around;
     }
 }
+
