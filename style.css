@@ -396,34 +396,48 @@ header {
 
 /* BOOK A PARTY PAGE */
 .booking-form {
-    border: 1px solid red; 
-    width: 80%; 
+    border: 2px solid red; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px; 
     display: block; 
     margin: 0 auto 3rem; 
-    padding: 2rem; 
+    padding: 1rem .5rem; 
 }
 
 input, 
 select, 
 label { 
     margin: 1rem .5rem;
-    border-radius: 5px;  
+     
 
 }
 
 input, 
-select {
-    border: 1.5px var(--kyblue) solid; 
+select, 
+textarea {
+    border: 1.5px var(--kyblue) solid;
+    border-radius: 5px;  
 }
 
 input {
     padding: .4rem 4rem .4rem .2rem; 
 }
 
+.date {
+    padding-right: .2rem; 
+}
+
 select {
     padding: .4rem 0; 
     width: 250px; 
     /* margin: 1rem auto;  */
+}
+
+textarea {
+    width: 95%; 
+    height: 100px; 
+    display: block; 
+    margin: 1rem .5rem; 
 }
 
 .get-a-quote {
@@ -525,7 +539,7 @@ select {
     }
 
     .booking-form {
-        width: 60%;  
+        width: 65%;  
     }
 
     .jf-policies {

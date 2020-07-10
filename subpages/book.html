@@ -55,8 +55,14 @@
                 </div>
 
                 <div class="form-question">
+                    <label for="date">Desired Date:</label>
+                    <input class="date" type="date" name="date" id="date">
+                </div>
+
+                <div class="form-question">
                     <label for="party-length">Length of access to Mobile Gaming Theater?</label>
                     <select class="party-length" name="party-length" id="party-length">
+                        <option value="0">Select Length</option>
                         <option value="1">1 hour</option>
                         <option value="2">2 hours</option>
                         <option value="3">3 hours</option>
@@ -68,6 +74,7 @@
                 <div class="form-question">
                     <label for="time-of-party">Time of party?</label>
                     <select name="time-of-party" id="time-of-party">
+                        <option value="select-time">Select Time</option>
                         <option value="morning">Morning</option>
                         <option value="afternoon">Afternoon</option>
                         <option value="evening">Evening</option>
@@ -77,6 +84,7 @@
                 <div class="form-question">
                     <label for="type-of-party">Type of Party:</label>
                     <select name="type-of-party" id="type-of-party">
+                        <option value="select-type">Select Type</option>
                         <option value="birthday">Birthday</option>
                         <option value="graduation">Graduation</option>
                         <option value="adult">Adult</option>
@@ -101,10 +109,10 @@
                     <input type="text" id="location" required>
                 </div>
 
-                <!-- <div class="form-question">
+                <div class="form-question">
                     <label for="comments">Comments or Questions:</label>
                     <textarea id="comments"></textarea>
-                </div> -->
+                </div>
             
                 <button class="submit-form-btn">Submit</button>
             </form>
