@@ -16,6 +16,13 @@
   }
   });
 
+  // let hover = document.querySelector('.book'); 
 
-
+  // hover.addEventListener("mouseover", function(event) {
+  //     hover.style.backgroundColor = 'white'; 
+  // })
+  
+  // hover.addEventListener("mouseout", function(event){
+  //   hover.style.color = 'black'; 
+  // })
 
