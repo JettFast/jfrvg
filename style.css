@@ -77,8 +77,8 @@
 
 :root {
     --kyblue: rgb(34, 58, 129); 
-    --yellow: #ffd204; 
-    --red: #e51b24; 
+    --yellow: rgb(255, 210, 4); 
+    --red: rgb(229, 27, 36); 
 }
 
 * {
@@ -101,30 +101,63 @@
 }
 
 /* Buttons  */
-/* 
-/* .book-top {
-    margin-bottom: 5rem; 
-    position: absolute;  
-}*/
 
-.book-top, 
-.book-bottom, 
-.about-btn, 
-.submit-form-btn {
-    padding: 1rem 5rem 1rem 2rem;  
-    border-radius: 20px; 
+.btn {
+  padding: 1rem 2rem; 
+  border-radius: 15px; 
+  background: white;  
+  border: var(--kyblue);
+  transition: all 0.5s; 
+  cursor: pointer; 
+  font-size: 1.3rem; 
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.about-btn {
-    /* display: block; 
-    margin: 0 auto;    */
-    height: 54px; 
+.btn span {
+    display: inline-block; 
+    position: relative; 
+    transition: 0.5s; 
+}
+
+.btn span:after {
+    content: '\00bb';     
+    position: absolute; 
+    opacity: 0; 
+    top: 0; 
+    right: -20px; 
+    transition: 0.5s; 
+}
+
+.btn:hover span {
+    padding-right: 20px; 
+}
+
+.btn:hover span:after {
+    opacity: 1; 
+    right: 0;
+}
+
+.about-btn,
+.submit-form-btn, 
+.price-btn {
+    border: 2px var(--kyblue) solid; 
 }
 
 .book-bottom {
     height: 3.375rem; 
     margin-bottom: 1rem; 
     color: black; 
+}
+
+.price-page-btns {
+    margin-top: auto; 
+    margin-bottom: 2rem; 
+}
+
+.price-btn {
+    padding: .5rem 1rem; 
+    border-radius: 10px; 
+    box-shadow: none; 
 }
 
 /* IMAGES */
@@ -236,8 +269,8 @@ header {
 }
 
 .about-p {
-    flex-basis: 75%;
-    margin-right: 1rem; 
+    flex-basis: 90%;
+    
 }
 
 .divider {
@@ -385,15 +418,7 @@ header {
       margin-block-end: .5rem;
   }
   
-  .price-page-btns {
-      margin-top: auto; 
-      margin-bottom: 2rem; 
-  }
 
-  .price-btn {
-      padding: .5rem 1rem; 
-      border-radius: 10px; 
-  }
 
   .policies {
       display: flex; 
@@ -615,6 +640,12 @@ textarea {
     .sectionOneDiv {
         background: none;
         display: inline-block; 
+        padding: 0; 
+    }
+
+    .about-p {
+        flex-basis: 75%; 
+        margin-right: 1rem; 
     }
 
     .footer-top h2 {
