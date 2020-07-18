@@ -2,8 +2,7 @@
 .hamburger {
     position: absolute;
     top: 45px;
-    right: 25px;
-  
+    right: 25px; 
     padding: 15px 15px;
     display: inline-block;
     cursor: pointer;
@@ -106,7 +105,6 @@
   padding: 1rem 2rem; 
   border-radius: 15px; 
   background: white;  
-  border: var(--kyblue);
   transition: all 0.5s; 
   cursor: pointer; 
   font-size: 1.3rem; 
@@ -144,7 +142,6 @@
 }
 
 .book-bottom {
-    height: 3.375rem; 
     margin-bottom: 1rem; 
     color: black; 
 }
@@ -265,7 +262,7 @@ header {
     display: flex; 
     flex-wrap: wrap;
     justify-content: center; 
-    /* align-content: center;  */
+    align-items: center; 
 }
 
 .about-p {
@@ -324,10 +321,6 @@ header {
 
 .footer-top h2 {  
     padding: 1rem 1rem 0; 
-}
-
-.final-prompt {
-    flex-basis: 60%; 
 }
 
 .footer-bottom {
@@ -511,10 +504,19 @@ textarea {
 
 .game-library li:first-child {
     font-weight: 800; 
+    font-size: 1.7rem; 
+    color: var(--red);
 }
 
 .games-by-console li {
     padding-bottom: .5rem; 
+}
+
+.game-cover {
+    text-align: center; 
+}
+.game-cover img {
+    height: 150px; 
 }
 
 /* FAQS PAGE */
@@ -548,6 +550,10 @@ textarea {
 
     .sectionOne h1 {
         padding-top: 0; 
+    }
+
+    .final-prompt {
+        flex-basis: 60%; 
     }
 
 }
@@ -651,7 +657,6 @@ textarea {
     .footer-top h2 {
         padding: 1rem 5rem 1rem 3rem;  
     }
-
    
 }
 
@@ -661,7 +666,7 @@ textarea {
     }
 }
 
-/* .book:hover {
+/* .btn:hover {
     background: url(images/mario-kart.jpg);
     background-color: white; 
     background-size: 40px; 
