@@ -22,7 +22,7 @@
         </button>
         <nav>
             <ul class="nav-ul">
-                <li class="nav-li first-nav-item"><a href="../index.html"><img src="../images/enlargedLogo.jpg" alt=""></a></li>
+                <li class="nav-li first-nav-item"><a href="../index.html"><img src="../images/enlargedLogo.jpg" alt="Jett Fast Logo"></a></li>
                 <li class="nav-li nav-pages"><a href="about.html">About</a></li>
                 <li class="nav-li nav-pages"><a href="pricing.html">Pricing</a></li>
                 <li class="nav-li nav-pages"><a href="gameLibrary.html">Game Library</a></li>
@@ -51,18 +51,18 @@
 
                 <div class="form-question">
                     <label class="hide" for="phone-number">Phone Number: </label>
-                    <input type="text" name="phone-number" id="phone-number">
+                    <input type="text" name="phone-number" id="phone-number" required>
                 </div>
 
                 <div class="form-question">
                     <label for="date">Desired Date:</label>
-                    <input class="date" type="date" name="date" id="date">
+                    <input class="date" type="date" name="date" id="date" required>
                 </div>
 
                 <div class="form-question">
                     <label for="party-length">Length of access to Mobile Gaming Theater?</label>
-                    <select class="party-length" name="party-length" id="party-length">
-                        <option value="0">Select Length</option>
+                    <select class="party-length" name="party-length" id="party-length" required>
+                        <option value="">Select Length</option>
                         <option value="1">1 hour</option>
                         <option value="2">2 hours</option>
                         <option value="3">3 hours</option>
@@ -72,19 +72,32 @@
                 </div>
 
                 <div class="form-question">
-                    <label for="time-of-party">Time of party?</label>
-                    <select name="time-of-party" id="time-of-party">
-                        <option value="select-time">Select Time</option>
-                        <option value="morning">Morning</option>
-                        <option value="afternoon">Afternoon</option>
-                        <option value="evening">Evening</option>
+                    <label for="time-of-party">Desired Start Time of Party:</label>
+                    <select name="time-of-party" id="time-of-party" required>
+                        <option value="">Select Time</option>
+                        <option value="9am">9 am</option>
+                        <option value="10am">10 am</option>
+                        <option value="11am">11 am</option>
+                        <option value="12pm">12 pm</option>
+                        <option value="1pm">1 pm</option>
+                        <option value="2pm">2 pm</option>
+                        <option value="3pm">3 pm</option>
+                        <option value="4pm">4 pm</option>
+                        <option value="5pm">5 pm</option>
+                        <option value="6pm">6 pm</option>
+                        <option value="7pm">7 pm</option>
+                        <option value="8pm">8 pm</option>
+                        <option value="9pm">9 pm</option>
+                        <option value="10pm">10 pm</option>
+                        <option value="11pm">11 pm</option>
+                        <option value="12am">12 am</option>
                     </select>
                 </div>
 
                 <div class="form-question">
                     <label for="type-of-party">Type of Party:</label>
-                    <select name="type-of-party" id="type-of-party">
-                        <option value="select-type">Select Type</option>
+                    <select name="type-of-party" id="type-of-party" required>
+                        <option value="">Select Type</option>
                         <option value="birthday">Birthday</option>
                         <option value="graduation">Graduation</option>
                         <option value="adult">Adult</option>
@@ -93,19 +106,9 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
-                
-                <div class="form-question">
-                    <label for="age">Guest of Honor's Age:</label>
-                    <input type="text" id="gender">
-                </div>
 
                 <div class="form-question">
-                    <label for="gender">Guest of Honor's Gender:</label>
-                    <input id="gender" type="text">
-                </div>
-
-                <div class="form-question">
-                    <label for="location">Location of Party:</label>
+                    <label for="location">City/Town of Party:</label>
                     <input type="text" id="location" required>
                 </div>
 
