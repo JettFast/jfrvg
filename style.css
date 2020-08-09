@@ -111,6 +111,10 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.btn:hover {
+    color: var(--kyblue); 
+}
+
 .btn span {
     display: inline-block; 
     position: relative; 
@@ -143,7 +147,7 @@
 
 .book-bottom {
     margin-bottom: 1rem; 
-    color: black; 
+    color: var(--kyblue); 
 }
 
 .price-page-btns {
@@ -274,7 +278,7 @@ header {
     margin-bottom: 2rem; 
 }
 .event-type-container {
-    margin: 2erm; 
+    margin: 2rem; 
 }
 
 .event-type {
