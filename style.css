@@ -224,6 +224,10 @@ header {
     padding: 1rem; 
 }
 
+#fullscreen {
+    flex-grow: 1;
+}
+
 .sectionOneDiv {
     background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(34, 58, 129, 0.73)), url(images/kidsplaying.jpg); 
     background-size: cover; 
@@ -495,10 +499,6 @@ textarea {
 
 .contact-phone {
     margin-top: 4rem; 
-}
-
-#contactmain {
-    flex-grow: 1;
 }
 
 /* GAME LIBRARY PAGE */
