@@ -306,7 +306,7 @@ header {
 }
 
 .responsive-video {
-    min-width: 20%; 
+    min-width: 20%;
     margin: .8rem; 
 }
 
@@ -495,6 +495,10 @@ textarea {
 
 .contact-phone {
     margin-top: 4rem; 
+}
+
+#contactmain {
+    flex-grow: 1;
 }
 
 /* GAME LIBRARY PAGE */
