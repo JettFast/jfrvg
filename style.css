@@ -502,29 +502,60 @@ textarea {
 }
 
 /* GAME LIBRARY PAGE */
+
 .game-library {
-    margin: 1rem; 
+    margin: 1rem;
 }
 
-.game-library ul {
-    margin: 2rem; 
+.games-wrapper {
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.game-library li:first-child {
+.games-by-console {
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 350px;
+    align-items: flex-start;
+    border: 2px solid var(--red);
+    margin: .5rem;
+}
+
+.games-by-console h3 {
     font-weight: 800; 
     font-size: 1.7rem; 
     color: var(--red);
+    align-self: center;
+}
+
+.games-by-console ul {
+    margin: 2rem; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.games-by-console > ul > li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: .5rem;
+    flex: 0 0;
 }
 
 .games-by-console li {
-    padding-bottom: .5rem; 
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.games-by-console span {
+    height: 55px;
 }
 
 .game-cover {
-    text-align: center; 
-}
-.game-cover img {
-    height: 150px; 
+    text-align: center;
+    height: 150px;
+    width: auto;
 }
 
 /* FAQS PAGE */
@@ -590,12 +621,7 @@ textarea {
     .trailer {
         width: 40%; 
     }
-
-    .games-by-console {
-        display: flex; 
-        justify-content: space-around; 
-    }
-
+    
     .faqs {
         width: 60%; 
     }
