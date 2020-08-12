@@ -42,7 +42,7 @@
       header.style.top = "inherit";
     }
     
-    if (document.body.scrollTop > 39 || document.documentElement.scrollTop > 39) {
+    if ((document.body.scrollTop > 39 || document.documentElement.scrollTop > 39) && window.innerWidth >= 991) {
       nav.style.fontSize = "1rem";
       navImg.style.height = "40px";
       header.style.backgroundColor = "white";
@@ -61,9 +61,5 @@
     }
   } 
 
-  window.onscroll = function() {
-    if (window.innerWidth >= 991) {
-    scrollFunction()
-    };
-  };
+  window.onscroll = () => scrollFunction();
 
