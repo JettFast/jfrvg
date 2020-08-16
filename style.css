@@ -517,9 +517,10 @@ textarea {
     flex-flow: column;
     flex: 1 0 350px;
     align-items: flex-start;
-    border: 2px solid var(--red);
     margin: .5rem;
 }
+
+/* Under 396px needs to be adjusted because the column is too wide. */
 
 .games-by-console h3 {
     font-weight: 800; 
@@ -593,6 +594,10 @@ textarea {
 
     .final-prompt {
         flex-basis: 60%; 
+    }
+
+    .games-by-console {
+        border: 2px solid var(--red);
     }
 
 }
